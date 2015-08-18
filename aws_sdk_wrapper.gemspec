@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'aws/sdk/wrapper/version'
+require 'aws_sdk_wrapper/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "aws-sdk-wrapper"
-  spec.version       = Aws::Sdk::Wrapper::VERSION
+  spec.name          = "aws_sdk_wrapper"
+  spec.version       = AwsSDKWrapper::VERSION
   spec.authors       = ["ct8ker"]
   spec.email         = ["htkinsider173@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{wrapper of aws-sdk}
+  spec.description   = %q{wrapper of aws-sdk}
+  spec.homepage      = "https://github.com/pocake/aws_sdk_wrapper"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

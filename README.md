@@ -1,4 +1,4 @@
-# Aws::Sdk::Wrapper
+# Aws Sdk Wrapper
 
 Wrapper of aws-sdk
 
@@ -7,7 +7,7 @@ Wrapper of aws-sdk
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'aws-sdk-wrapper', github: 'pocake/aws-sdk-wrapper', tag: 'v0.0.1'
+gem 'aws_sdk_wrapper', git: 'git@github.com:pocake/aws_sdk_wrapper'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install aws-sdk-wrapper
+    $ gem install aws_sdk_wrapper
 
 ## Usage
 
