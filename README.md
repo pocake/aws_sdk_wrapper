@@ -1,6 +1,6 @@
 # Aws::Sdk::Wrapper
 
-TODO: Write a gem description
+Wrapper of aws-sdk
 
 ## Installation
 
@@ -20,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuration
+
+```ruby
+AwsSDKWrapper.configure do |config|
+  # Global common settings
+  config.access_key_id = "test"
+  config.secret_access_key = "test"
+
+  # SQS settings
+  config.sqs.region = "local"
+  config.sqs.endpoint = "http://localhost:9324"
+end
+```
 
 ## Contributing
 
