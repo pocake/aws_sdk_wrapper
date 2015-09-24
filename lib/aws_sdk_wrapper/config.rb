@@ -25,6 +25,9 @@ module AwsSDKWrapper
     attr_reader :sqs
     attr_writer :sqs
 
+    attr_reader :s3
+    attr_writer :s3
+
     # SQS Configuration
     class SQSConfiguration
       attr_reader :region
@@ -34,8 +37,14 @@ module AwsSDKWrapper
       attr_writer :endpoint
     end
 
+    class S3Configuration
+      attr_reader :region
+      attr_writer :region
+    end
+
     def initialize
       self.sqs = SQSConfiguration.new
+      self.s3  = S3Configuration.new
     end
   end
 
@@ -45,5 +54,6 @@ module AwsSDKWrapper
     config.secret_access_key = "test"
     config.sqs.region = "local"
     config.sqs.endpoint = "http://localhost:9324"
+    config.s3.region = "local"
   end
 end

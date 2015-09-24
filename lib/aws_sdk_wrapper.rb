@@ -4,6 +4,8 @@ require 'aws_sdk_wrapper/version'
 require 'aws_sdk_wrapper/sqs'
 require 'aws_sdk_wrapper/sqs/client'
 require 'aws_sdk_wrapper/sqs/queue_poller'
+require 'aws_sdk_wrapper/s3'
+require 'aws_sdk_wrapper/s3/client'
 require 'aws_sdk_wrapper/patches/sqs_queue_urls'
 
 #
