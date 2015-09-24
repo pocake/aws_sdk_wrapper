@@ -16,12 +16,6 @@ module AwsSDKWrapper
 
   # Global configuration
   class Configuration
-    attr_reader :access_key_id
-    attr_writer :access_key_id
-
-    attr_reader :secret_access_key
-    attr_writer :secret_access_key
-
     attr_reader :sqs
     attr_writer :sqs
 
@@ -30,6 +24,12 @@ module AwsSDKWrapper
 
     # SQS Configuration
     class SQSConfiguration
+      attr_reader :access_key_id
+      attr_writer :access_key_id
+
+      attr_reader :secret_access_key
+      attr_writer :secret_access_key
+
       attr_reader :region
       attr_writer :region
 
@@ -38,6 +38,12 @@ module AwsSDKWrapper
     end
 
     class S3Configuration
+      attr_reader :access_key_id
+      attr_writer :access_key_id
+
+      attr_reader :secret_access_key
+      attr_writer :secret_access_key
+
       attr_reader :region
       attr_writer :region
     end
@@ -50,10 +56,12 @@ module AwsSDKWrapper
 
   # Default configuration
   configure do |config|
-    config.access_key_id = "test"
-    config.secret_access_key = "test"
+    config.sqs.access_key_id = "test"
+    config.sqs.secret_access_key = "test"
     config.sqs.region = "local"
     config.sqs.endpoint = "http://localhost:9324"
+    config.s3.access_key_id = "test"
+    config.s3.secret_access_key = "test"
     config.s3.region = "local"
   end
 end
