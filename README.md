@@ -24,13 +24,16 @@ Or install it yourself as:
 
 ```ruby
 AwsSDKWrapper.configure do |config|
-  # Global common settings
-  config.access_key_id = "test"
-  config.secret_access_key = "test"
-
   # SQS settings
+  config.sqs.access_key_id = "test"
+  config.sqs.secret_access_key = "test"
   config.sqs.region = "local"
   config.sqs.endpoint = "http://localhost:9324"
+
+  # S3 settings
+  config.sqs.access_key_id = "test"
+  config.sqs.secret_access_key = "test"
+  config.sqs.region = "local"
 end
 ```
 
